@@ -41,18 +41,77 @@
         app:layout_constraintStart_toStartOf="@+id/tvTo"
         app:layout_constraintTop_toBottomOf="@+id/edTxtEmail" />
 
-    <EditText
-        android:id="@+id/edTxtDescripcion"
-        android:layout_width="329dp"
-        android:layout_height="260dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/subject_hint"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+    <CheckBox
+        android:id="@+id/cbFiebre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Fiebre alta."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edTxtSubject" />
+
+    <CheckBox
+        android:id="@+id/cbTos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Dolor de garganta o tos seca."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbFiebre" />
+
+    <CheckBox
+        android:id="@+id/cbDolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Dolor de cuerpo o debilidad."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbTos" />
+
+    <CheckBox
+        android:id="@+id/cbRespiracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Dificultad para respirar."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbDolor" />
+
+    <CheckBox
+        android:id="@+id/cbOlfato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Perdida de olfato o el gusto."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbRespiracion" />
+
+    <CheckBox
+        android:id="@+id/cbOPecho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Dolor o presion en el pecho."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbOlfato" />
+
+    <EditText
+        android:id="@+id/edTxtDescripcion"
+        android:layout_width="343dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/subject_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbOPecho" />
 
     <Button
         android:id="@+id/btnEnviar"
